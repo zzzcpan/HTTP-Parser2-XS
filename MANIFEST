@@ -1,0 +1,12 @@
+Changes
+http_parser.c
+http_parser.h
+lib/HTTP/Parser2/XS.pm
+Makefile.PL
+MANIFEST			This list of files
+parser2.h
+ppport.h
+t/00-use.t
+t/01-simple.t
+TODO
+XS.xs
