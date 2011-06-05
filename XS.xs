@@ -11,7 +11,7 @@ parse_http_request(buf, envref)
     CODE:
 
 	if (!SvROK(envref) || SvTYPE(SvRV(envref)) != SVt_PVHV)
-		croak("Second param to ngxe_parse_http_request must be a hashref");
+		croak("Second param for parse_http_request must be a hashref");
  
 	RETVAL = parse_http_request(buf, envref);
     OUTPUT:
@@ -25,7 +25,7 @@ parse_http_response(buf, envref)
     CODE:
 
 	if (!SvROK(envref) || SvTYPE(SvRV(envref)) != SVt_PVHV)
-		croak("Second param to ngxe_parse_http_response must be a hashref");
+		croak("Second param for parse_http_response must be a hashref");
  
 	RETVAL = parse_http_response(buf, envref);
     OUTPUT:
@@ -39,7 +39,7 @@ parse_http_request_psgi(buf, envref)
     CODE:
 
 	if (!SvROK(envref) || SvTYPE(SvRV(envref)) != SVt_PVHV)
-		croak("Second param to ngxe_parse_http_request must be a hashref");
+		croak("Second param for parse_http_request must be a hashref");
  
 	RETVAL = parse_http_request_psgi(buf, envref);
     OUTPUT:

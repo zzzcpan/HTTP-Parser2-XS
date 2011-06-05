@@ -1,4 +1,6 @@
 
+	- HTTP tests
+
 	- ditch HTTP::Parser::XS code and use nginx-like parser
 	  instead;
 
