@@ -10,7 +10,7 @@ our @EXPORT  = qw(
     parse_http_response
 );
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 require XSLoader;
 XSLoader::load('HTTP::Parser2::XS', $VERSION);
